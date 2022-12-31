@@ -1,0 +1,43 @@
+<h1 mat-dialog-title>Adaugă Produs</h1>
+<div mat-dialog-content>
+  <form [formGroup]="productForm">
+    <mat-form-field appearance="outline">
+      <mat-label>ID</mat-label>
+      <input formControlName="ID" matInput placeholder="ID" type="text" id="ID" minlength="1" maxlength="20" required>
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Cod Magazin</mat-label>
+      <input formControlName="CodMagazin" matInput placeholder="Cod Magazin" type="text" id="CodMagazin" minlength="1" maxlength="20" required>
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Denumire Produs</mat-label>
+      <input formControlName="DenumireProdus" matInput placeholder="Denumire Produs" type="text" id="DenumireProdus" minlength="1" maxlength="150" required>
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Dată Înregistrare</mat-label>
+      <input formControlName="date" matInput [matDatepicker]="picker" required>
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline">
+      <mat-label>Cantitate</mat-label>
+      <input formControlName="Cantitate" matInput placeholder="Cantitate" type="number" id="Cantitate" required>
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Pret Unitar</mat-label>
+      <input formControlName="PretUnitar" matInput placeholder="Pret Unitar" type="number" id="PretUnitar" required>
+    </mat-form-field>
+  </form>
+</div>
+
+
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addProduct()">{{actionBtn}}</button>
+</div>
