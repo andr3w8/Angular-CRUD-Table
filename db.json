@@ -1,0 +1,41 @@
+{
+  "productList": [
+    {
+      "ID": "666888",
+      "CodMagazin": "3558",
+      "DenumireProdus": "Iphone 14 pro max",
+      "date": "2022-10-05T10:00:00.000Z",
+      "Cantitate": 5,
+      "PretUnitar": 40000,
+      "id": 1
+    },
+    {
+      "ID": "2342",
+      "CodMagazin": "3",
+      "DenumireProdus": "6",
+      "date": "2022-11-15T22:00:00.000Z",
+      "Cantitate": 66,
+      "PretUnitar": 4565464,
+      "id": 2
+    },
+    {
+      "ID": "5676878",
+      "CodMagazin": "4565656",
+      "DenumireProdus": "tghrngtnt",
+      "date": "2020-06-18T21:00:00.000Z",
+      "Cantitate": 456,
+      "PretUnitar": 5676,
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
